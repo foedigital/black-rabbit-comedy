@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Black Rabbit Comedy Club - Austin's Only Underground BYOB Comedy Club. Live stand-up comedy in a speakeasy-style venue.">
+    <title>Black Rabbit Comedy Club | Austin's Underground BYOB Comedy Venue</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/logo-clean.png">
+    <link rel="apple-touch-icon" href="./images/logo-clean.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Black Rabbit</a>
+
+            <!-- Hamburger Menu -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#shows" class="nav-link">Shows</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#location" class="nav-link">Location</a></li>
+                <li>
+                    <a href="https://instagram.com/blackrabbitatx" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="Follow us on Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Video Background -->
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video" poster="./images/hero-bg.png">
+                <source src="./images/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Black Rabbit</h1>
+            <p class="hero-tagline">Austin's Only Underground BYOB Comedy Club</p>
+            <a href="https://www.eventbrite.com/e/black-rabbit-underground-comedy-tickets-753496647757" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get Tickets</a>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to content">
+            <span class="scroll-arrow"></span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <h2 class="section-title">Welcome to the <span class="text-glow">Underground</span></h2>
+                    <p class="about-text">
+                        Black Rabbit is Austin's hidden gem for live comedy—a speakeasy-style club tucked beneath the streets of downtown. Step through the golden door and descend into an intimate, 50-seat room where the city's best comedians perform just feet away from you.
+                    </p>
+                    <p class="about-text">
+                        We're proudly BYOB, so grab your drinks from Hot Spot Liquor Store next door and settle in for a night of laughs in our moody, underground atmosphere.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item fade-in">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11h1a3 3 0 0 1 0 6h-1"/><path d="M9 12v6"/><path d="M13 12v6"/><path d="M14 7.5c-1 0-1.44.5-3 .5s-2-.5-3-.5-1.72.5-2.5.5a2.5 2.5 0 0 1 0-5c.78 0 1.57.5 2.5.5S9.44 2 11 2s2 1.5 3 1.5 1.72-.5 2.5-.5a2.5 2.5 0 0 1 0 5c-.78 0-1.5-.5-2.5-.5Z"/><path d="M5 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"/></svg>
+                            </div>
+                            <h3>BYOB</h3>
+                            <p>Bring your own drinks. Hot Spot Liquor is right next door.</p>
+                        </div>
+                        <div class="highlight-item fade-in">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                            </div>
+                            <h3>501(c)(3) Nonprofit</h3>
+                            <p>Supporting artists and the Austin comedy community.</p>
+                        </div>
+                        <div class="highlight-item fade-in">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></svg>
+                            </div>
+                            <h3>Speakeasy Vibes</h3>
+                            <p>An underground escape with intimate, prohibition-era atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-video fade-in">
+                    <div class="video-container">
+                        <iframe
+                            id="aboutVideo"
+                            src="https://www.youtube.com/embed/pXXt0h5pqK4?enablejsapi=1&rel=0"
+                            title="Black Rabbit Comedy Club"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shows Section -->
+    <section class="section shows" id="shows">
+        <div class="container">
+            <h2 class="section-title fade-in">Show <span class="text-glow">Schedule</span></h2>
+            <p class="section-subtitle fade-in">Join us for live comedy every week in Austin's most intimate venue</p>
+
+            <div class="shows-grid">
+                <div class="show-card fade-in">
+                    <div class="show-day">Thursday</div>
+                    <div class="show-time">8:00 PM</div>
+                    <div class="show-description">Weekly showcase featuring local & touring comics</div>
+                </div>
+                <div class="show-card fade-in">
+                    <div class="show-day">Friday</div>
+                    <div class="show-time">8:00 PM & 10:00 PM</div>
+                    <div class="show-description">Prime time comedy with two shows nightly</div>
+                </div>
+                <div class="show-card fade-in">
+                    <div class="show-day">Saturday</div>
+                    <div class="show-time">8:00 PM & 10:00 PM</div>
+                    <div class="show-description">Our biggest nights—book early!</div>
+                </div>
+                <div class="show-card featured fade-in">
+                    <div class="show-badge">Free Entry</div>
+                    <div class="show-day">Sunday</div>
+                    <div class="show-time">7:00 PM</div>
+                    <div class="show-name">"Down the Rabbit Hole"</div>
+                    <div class="show-description">FREE open mic showcase. Reserve your spot online.</div>
+                </div>
+            </div>
+
+            <div class="shows-info fade-in">
+                <div class="ticket-price">
+                    <span class="price-label">Tickets</span>
+                    <span class="price-amount">$15 - $20</span>
+                </div>
+                <a href="https://www.eventbrite.com/e/black-rabbit-underground-comedy-tickets-753496647757" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book Tickets on Eventbrite</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in">The <span class="text-glow">Experience</span></h2>
+            <p class="section-subtitle fade-in">Get a taste of the underground comedy scene</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" data-index="0">
+                    <img src="./images/performer-neon.png" alt="Comedian performing under neon lights" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in" data-index="1">
+                    <img src="./images/stage-full.png" alt="Full stage view at Black Rabbit" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in" data-index="2">
+                    <img src="./images/performer-crowd.png" alt="Comedian engaging with the crowd" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in" data-index="3">
+                    <img src="./images/performer-byob.png" alt="Comedian with drink showcasing BYOB atmosphere" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in" data-index="4">
+                    <img src="./images/performer-energy.png" alt="High energy performance" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in" data-index="5">
+                    <img src="./images/performer-casual.png" alt="Casual comedy performance" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in" data-index="6">
+                    <img src="./images/performer-pointing.png" alt="Comedian interacting with audience" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in" data-index="7">
+                    <img src="./images/backstage.png" alt="Behind the scenes at Black Rabbit" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Video Carousel -->
+            <div class="video-carousel fade-in">
+                <h3 class="video-carousel-title">Watch Our <span class="text-glow">Performers</span></h3>
+                <div class="video-carousel-container">
+                    <button class="video-nav video-prev" aria-label="Previous video">&#10094;</button>
+
+                    <div class="video-carousel-wrapper">
+                        <div class="video-slide active" data-index="0">
+                            <div class="video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/m6weMUz0lqA?enablejsapi=1&rel=0"
+                                    title="Ehsan Ahmad | Too Soon (Full Half Hour Comedy Special)"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p class="video-info">Ehsan Ahmad | Too Soon (Full Half Hour Comedy Special)</p>
+                        </div>
+                        <div class="video-slide" data-index="1">
+                            <div class="video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/ySFueNvZZjw?enablejsapi=1&rel=0&start=1165"
+                                    title="4:4:Fuzzy - A COMEDY EXPERIENCE"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p class="video-info">4:4:Fuzzy - A COMEDY EXPERIENCE (skip to 19:25 for Black Rabbit)</p>
+                        </div>
+                        <div class="video-slide" data-index="2">
+                            <div class="video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/WoWQiwuRLLE?enablejsapi=1&rel=0"
+                                    title="Rafael DeCamargo Black Rabbit Comedy Club ATX"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p class="video-info">Rafael DeCamargo at Black Rabbit Comedy Club ATX</p>
+                        </div>
+                        <div class="video-slide" data-index="3">
+                            <div class="video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/T-qZyDnKGGk?enablejsapi=1&rel=0"
+                                    title="Ryan Jack at Black Rabbit Comedy Club 12/2/23"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p class="video-info">Ryan Jack at Black Rabbit Comedy Club 12/2/23</p>
+                        </div>
+                        <div class="video-slide" data-index="4">
+                            <div class="video-embed vertical">
+                                <iframe
+                                    src="https://www.youtube.com/embed/tyWVxkP2Cpo?enablejsapi=1&rel=0"
+                                    title="Juanita @ Black Rabbit"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p class="video-info">Juanita @ Black Rabbit</p>
+                        </div>
+                    </div>
+
+                    <button class="video-nav video-next" aria-label="Next video">&#10095;</button>
+                </div>
+
+                <div class="video-dots">
+                    <button class="video-dot active" data-index="0" aria-label="Video 1"></button>
+                    <button class="video-dot" data-index="1" aria-label="Video 2"></button>
+                    <button class="video-dot" data-index="2" aria-label="Video 3"></button>
+                    <button class="video-dot" data-index="3" aria-label="Video 4"></button>
+                    <button class="video-dot" data-index="4" aria-label="Video 5"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+            <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section location" id="location">
+        <div class="container">
+            <h2 class="section-title fade-in">Find <span class="text-glow">Us</span></h2>
+            <p class="section-subtitle fade-in">Descend into Austin's best-kept comedy secret</p>
+
+            <div class="location-grid">
+                <div class="location-info fade-in">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="location-details">
+                            <h3>Address</h3>
+                            <p>411 Brazos St, Suite 100B<br>Austin, TX 78701</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div class="location-details">
+                            <h3>Pro Tip</h3>
+                            <p>Grab drinks at <strong>Hot Spot Liquor Store</strong> next door before the show!</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                        </div>
+                        <div class="location-details">
+                            <h3>Parking</h3>
+                            <p>Street parking on 5th Street and nearby garages available.</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card golden">
+                        <div class="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-9"/><path d="M15.17 2.21a1.67 1.67 0 0 1 1.63 2.11L15.4 9h3.1c1.2 0 2.05 1.17 1.7 2.3l-2.8 9a1.7 1.7 0 0 1-1.63 1.2H6a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2h3.3l2.28-6.63a1.67 1.67 0 0 1 1.59-1.16Z"/></svg>
+                        </div>
+                        <div class="location-details">
+                            <h3>Look for the Golden Door</h3>
+                            <p>Find the entrance and descend into the underground.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-map fade-in">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.6741307075396!2d-97.74240492392788!3d30.267458006638685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5a6a2d4c8c7%3A0x9f2b9d8a2e8e8e8e!2s411%20Brazos%20St%2C%20Austin%2C%20TX%2078701!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Black Rabbit Comedy Club Location">
+                        </iframe>
+                    </div>
+                    <div class="location-images">
+                        <img src="./images/exterior-sign.png" alt="Black Rabbit exterior signage" loading="lazy">
+                        <img src="./images/exterior-byob.png" alt="Venue entrance with BYOB sign" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./images/logo-clean.png" alt="Black Rabbit Comedy Club" class="footer-logo-img">
+                    <p class="footer-tagline">Austin's Underground Comedy Club</p>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/blackrabbitatx" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        <span>@blackrabbitatx</span>
+                    </a>
+                    <a href="https://do512.com/venues/black-rabbit-atx" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Upvote us on Do512">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                        <span>Upvote on Do512</span>
+                    </a>
+                </div>
+
+                <div class="footer-donate">
+                    <p>Support the Austin comedy community</p>
+                    <a href="https://venmo.com/blackrabbitatx" target="_blank" rel="noopener noreferrer" class="donate-link">
+                        <span class="venmo-icon">V</span>
+                        Venmo @blackrabbitatx
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="nonprofit-notice">Black Rabbit ATX is a registered 501(c)(3) non-profit organization dedicated to supporting artists and the comedy community.</p>
+                <p class="copyright">&copy; 2025 Black Rabbit Comedy Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
