@@ -741,6 +741,18 @@ img {
     color: var(--text-secondary);
 }
 
+.team-photo.has-image {
+    overflow: hidden;
+    padding: 0;
+}
+
+.team-photo.has-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .team-name {
     font-family: var(--font-heading);
     font-size: 1.5rem;
