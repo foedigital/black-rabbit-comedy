@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentImageIndex = 0;
     const galleryImages = [];
 
-    // Collect all gallery images
+    // Collect all gallery images and link clicks to Instagram
     galleryItems.forEach((item, index) => {
         const img = item.querySelector('img');
         galleryImages.push({
@@ -136,7 +136,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         item.addEventListener('click', () => {
-            openLightbox(index);
+            const creditLink = item.querySelector('.gallery-credit');
+            if (creditLink && creditLink.href) {
+                window.open(creditLink.href, '_blank', 'noopener,noreferrer');
+            }
         });
     });
 
@@ -229,6 +232,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // ----- Team Card Click → Instagram -----
+    document.querySelectorAll('.team-card').forEach(card => {
+        const socialLink = card.querySelector('a.team-social');
+        if (socialLink) {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', (e) => {
+                if (e.target.closest('a.team-social')) return;
+                window.open(socialLink.href, '_blank', 'noopener,noreferrer');
+            });
+        }
+    });
 
     // ----- Video Autoplay Fallback -----
     const heroVideo = document.querySelector('.hero-video');
