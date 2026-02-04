@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             } else {
                 // Scroll back to gallery top
-                const gallerySection = document.getElementById('comedians');
+                const gallerySection = document.getElementById('gallery');
                 if (gallerySection) {
                     const navHeight = navbar.offsetHeight;
                     window.scrollTo({
