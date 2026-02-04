@@ -196,6 +196,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // ----- Gallery Show More / Show Less -----
+    const galleryGrid = document.querySelector('.gallery-grid');
+    const galleryToggle = document.getElementById('galleryToggle');
+    const toggleText = galleryToggle ? galleryToggle.querySelector('.toggle-text') : null;
+
+    if (galleryGrid && galleryToggle) {
+        // Only show button if there are more than 8 items
+        if (galleryGrid.children.length > 8) {
+            galleryToggle.classList.add('visible');
+        }
+
+        galleryToggle.addEventListener('click', function() {
+            const isExpanded = galleryGrid.classList.toggle('expanded');
+            toggleText.textContent = isExpanded ? 'Show Less' : 'Show More';
+
+            if (isExpanded) {
+                // Re-observe newly visible fade-in elements
+                galleryGrid.querySelectorAll('.gallery-item:nth-child(n+9).fade-in:not(.visible)').forEach(el => {
+                    fadeInObserver.observe(el);
+                });
+            } else {
+                // Scroll back to gallery top
+                const gallerySection = document.getElementById('gallery');
+                if (gallerySection) {
+                    const navHeight = navbar.offsetHeight;
+                    window.scrollTo({
+                        top: gallerySection.offsetTop - navHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    }
+
     // ----- Video Autoplay Fallback -----
     const heroVideo = document.querySelector('.hero-video');
     if (heroVideo) {
